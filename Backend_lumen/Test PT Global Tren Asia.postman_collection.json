@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "7644c636-cd63-4363-9dbc-5ce8ddec5388",
+		"name": "Test PT Global Tren Asia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Registration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\" : \"rahmat12\",\n    \"email\" : \"rahmat@test.com\",\n    \"password\" : \"admin123\",\n    \"password_confirmation\" : \"admin123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/registration",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"registration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\" : \"rahmat12\",\n    \"password\" : \"admin123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZWY2ZDU3YzA4MTIyOTY2YzI5N2NmZmMyMmJmNzdmOGFmZWE4OWQ2NjdiOGJhN2U4MjY4MGJlMGUzNTBmOWNiNmY2ZTQ5MmY3YzA1Y2YyNzgiLCJpYXQiOiIxNjEzODg2MzM1LjgzMzI1NyIsIm5iZiI6IjE2MTM4ODYzMzUuODMzMjc3IiwiZXhwIjoiMTY0NTQyMjMzNS43Mjg0MjciLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.i4y9UPZNQezfZB-QjTlqkY_SVvdghOHffToKk7lWTNWlty2aJPEbuHaENFN7lHyDZ3qcbmACKH4KY7RcMQlUsmLWZ1l0A8sM0YnVSyqKTiZWdgxzDEl_Z-W1ff-FpxdlUkh5c98a7yBL3GJkRE8MycBxp_9RDwan_0yolyWeqEm8UIUn7F8BYtDrSbEyFCtXMBQEZR0od2IgMM6lGs482rYfXUZDkbVyHRyv7TNvInGxtvG2rF0-jUAsU_qSFj1m3W-mear9TGcICd8OmsX96GnDOXVdXdzj2EM8r1oLZJ5hIPJ47g4xoYsiLACSQ1nY98dBgV_81OfLaK26iklA0ROTA4Nn8PZ4iLDmwJBB4xTID-esptPCyyD0VwtsImDK3OFeZ7kY-RsqYCon_QVURtD8yIlZ3f43R9sWZlfDCR6ym_A615fDXrRqAcP73T6eReHHioFadaiIGEXzOEi-_fHvmSswl4HjgUpbWulh4f42JPmmzp3wUf67RFRJAc6533iAkgqq5dvtkV1T_xt856GmMRyBQQBpNqp82XkhT58AJJgChtHuoHDEkPiEJcevKnf66TBYoeIlf13fpuTn8HUCnH_ffWVLUZh7CQniuEzapWmx1jJRnggmIkOrWhgrZrNhh_fMdnCOlpTj8j2LsAQquaJMUQVKW-V6Cq9UyIg",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
